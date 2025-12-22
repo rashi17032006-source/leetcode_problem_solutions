@@ -1,0 +1,6 @@
+class Solution(object):
+    def isPalindrome(self, x):
+        st=str(x)
+        st1=st[::-1]
+        return st1==st
+        
