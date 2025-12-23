@@ -1,0 +1,11 @@
+class Solution(object):
+    def firstUniqChar(self, s):
+        dct={}
+        for ch in s:
+            dct[ch]=dct.get(ch,0)+1
+        for i in range(0,len(s)):
+            if dct[s[i]]==1:
+                 return i
+            
+        return -1
+        
