@@ -1,0 +1,14 @@
+from math import sqrt
+class Solution(object):
+    def checkPerfectNumber(self, num):
+        if num<=1:
+            return False
+        result=1
+        for i in range(2,int(sqrt(num))+1):
+            if num%i==0:
+                result+=i
+                if i!=num//i :
+                     result+=num//i
+        return num==result
+
+        
